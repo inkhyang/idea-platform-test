@@ -55,7 +55,7 @@ public class FlightService {
         if (size % 2 != 0) {
             return list.get(size / 2).getPrice();
         }
-        return (list.get(size / 2).getPrice() + list.get(size / 2 + 1).getPrice()) / 2;
+        return (list.get(size / 2 - 1).getPrice() + list.get(size / 2).getPrice()) / 2;
     }
 
     private Flight minFlightTime(List<Flight> list) {
